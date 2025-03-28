@@ -1,3 +1,21 @@
+/////// TEST 1
+t = TempoCLock; // LinkClock.new gives comparable results
+o = Bus.control;
+(
+SynthDef("test",{
+	var out;
+	out = Sweep.kr();
+	Out.kr(o,out);
+}).play
+)
+
+d = o.getSynchronous - t.beats; // offset
+(o.getSynchronous - t.beats - d) * 1000; // difference between TempoClock and synth Sweep in ms, is spitting out values between -10 and 10 for me
+
+1000/s.sampleRate*s.options.blockSize; // blocksize in ms
+
+
+/////// TEST 2
 t = TempoCLock; // LinkClock.new gives comparable results
 o = Bus.control;
 (
@@ -31,6 +49,8 @@ d = o.getSynchronous - t.beats; // offset
 
 s.options.hardwareBufferSize
 
+
+//////// TEST 3
 s.boot;
 
 (

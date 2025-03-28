@@ -5,5 +5,6 @@
     "parameterPresetPath": "C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\preset.txt",
     "logPath": "C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\Logs", 
 
-    "headPhoneGainDb": "-30"
+    "headPhoneGainDb": "-30",
+    "audioConfiguration": "pureStereo" 
 }

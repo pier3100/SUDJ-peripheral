@@ -3,12 +3,6 @@ c.tempo * 60;
 // playback
 ~deck1.loadDouble(~prelistenDeck);
 ~deck1.pitchbend_(10);
-o = ~deck1.beat2time(~deck1.clock.beats)-SystemClock.seconds;
-(
-((~deck1.beat2time(~deck1.clock.beats)-SystemClock.seconds)).postln;
-((~deck1.position2time(~deck1.referenceBus.getSynchronous)-~deck1.beat2time(~deck1.clock.beats))*1000).postln;
-(s.actualSampleRate-48000).postln;
-)
 
 ~deck1.align
 ~deck1.synth.trace
