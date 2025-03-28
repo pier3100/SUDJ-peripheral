@@ -1,0 +1,37 @@
+major
+1d    0
+2d    7 (zit 7 semitones weg van 1d)
+3d    2
+4d    9 (zit 7+7+7=21=12+9 semitones weg van 1d)
+5d    4
+6d    11
+9d    8 (8*7 = 56; 56-(12*4)=8)
+10d   3
+12d   5 (volgens berekenening
+
+minor
+1m    21 (21-12=9)
+10m   12
+11m   19
+12m   14 14
+
+
+stel we beginnen bij 1d; laten we aannemen dat dat C major is dan zitten daar de volgende semitones in
+0(C) 2 4 5 7 9 11 0
+nu gaan we naar de adjacent key 2d; dat is dan G major:
+7(G) 9 11 0 2 4 6 7 
+en nu zien we dat alleen 5 voor 6 is verwisseld  --> verschil tussen 6 en de tonen van C major is: 6 4 2
+nu gaan we naar 3d, dat is D major
+2(D) 4 6 7 9 11 1 2, nu is 12 voor 1 verwisseld
+
+1m, A minor (circle of fifths is versprongen voor minor vs major; omdat aan major akkoord precies de zelfde tonen bevat als een minor akkoord maar dan eentje die 3 cemitonen lager begint) 
+9(A) 11 0 2 4 5 7 9
+
+10m,  Bes minor
+10(Bes) 12 1 3 5 6 8 10
+
+
+
+todo:
+ - optie om major vs minor te kiezen
+ - steekproef doen om te zien of filtering werkt zoals verwacht
