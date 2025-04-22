@@ -18,4 +18,8 @@ git add .
 git commit -m "!commitMessage!"
 git push
 
+echo.
+echo All done!
+pause
+
 endlocal
