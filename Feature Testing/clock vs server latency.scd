@@ -1,5 +1,5 @@
 /////// TEST 1
-t = TempoCLock; // LinkClock.new gives comparable results
+t = TempoClock.new; // LinkClock.new gives comparable results
 o = Bus.control;
 (
 SynthDef("test",{

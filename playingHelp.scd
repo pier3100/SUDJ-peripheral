@@ -4,6 +4,7 @@ c.tempo * 60;
 ~deck1.loadDouble(~prelistenDeck);
 ~deck1.pitchbend_(10);
 
+~deck1.playPause;
 ~deck1.align
 ~deck1.synth.trace
 ~deck1.playPause_(true);
@@ -20,6 +21,10 @@ c.tempo * 60;
 ~deck3.track.postInfo;
 ~deck3.clock.tempo *60;
 ~deck3.clock.sync
+~deck3.playPause;
+~deck3.endOfTrackEvent;
+~deck3.clock.beats
+~deck3.time2beat(~deck3.track.duration)
 
 ~sChannel1.trace
 s.options.numOutputBusChannels

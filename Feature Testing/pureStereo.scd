@@ -23,3 +23,9 @@ q = Synth.new(\test);
 q.trace;
 
 Library.at(\audioConfiguration) == "pureStereo"
+
+
+Library.at(\audioConfiguration)
+if(["pureStereo", "surroundByKernel"].includes("pureStereo")){ "hoi".postln};
+["pureStereo", "surroundByKernel"].includesEqual("pureStereo")
+["pureStereo", "surroundByKernel"].[0].class

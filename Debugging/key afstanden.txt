@@ -5,8 +5,11 @@ major
 4d    9 (zit 7+7+7=21=12+9 semitones weg van 1d)
 5d    4
 6d    11
+7     6
+8     1
 9d    8 (8*7 = 56; 56-(12*4)=8)
 10d   3
+11    10
 12d   5 (volgens berekenening
 
 minor
