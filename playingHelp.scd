@@ -3,7 +3,7 @@ c.tempo * 60;
 // playback
 ~deck1.loadDouble(~prelistenDeck);
 ~deck1.pitchbend_(10);
-
+~deck1.track.postInfo
 ~deck1.playPause;
 ~deck1.align
 ~deck1.synth.trace
@@ -31,6 +31,7 @@ s.options.numOutputBusChannels
 
 // settings
 ~sOutputs.setControlVal(\headPhoneGainDb, -25);
+~sOutputs.setControlVal(\masterVolume, 0);
 
 // libraryConsole
 ~prelistenDeck.track.postInfo;
@@ -57,3 +58,5 @@ s.options.numOutputBusChannels
 Stethoscope.new
 { [SinOsc.ar(440, 0, 0.2),SinOsc.ar(450, 0, 0.2) ]}.play;
 Array.series((s.options.numOutputBusChannels-2).clip(2,6));
+
+~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom)
