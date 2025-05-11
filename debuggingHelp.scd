@@ -1,3 +1,7 @@
+//
+//use .yield inside a routine to pause the routine, for me everything runs inside the main routine
+
+
 // SUDJ: deck
 ~libraryConsole.activePlaylist.asArray
 ~libraryConsole.nextTrack_;
