@@ -6,4 +6,6 @@ logPath: "C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\Logs"
 
 headPhoneGainDb: "-30"
 masterVolume: "0"
+EqFreqLow: "0.18"
+EqFreqHigh: "0.505"
 audioConfiguration: "pureStereo" # "pureStereo", "surroundByKernel", methods of handling stereo/surround sound data throughout the architecture

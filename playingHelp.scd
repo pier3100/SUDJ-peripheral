@@ -66,8 +66,8 @@ s.options.numOutputBusChannels
 
 ~deck3.clock.seconds
 ~deck3.clock.beats
-
-~deck3.track.postInfo;
+~deck1.track.postInfo;
+~deck4.track.postInfo;
 ~deck3.info;
 ~deck3.clock.tempo
 // settings
@@ -116,3 +116,10 @@ Stethoscope.new
 Array.series((s.options.numOutputBusChannels-2).clip(2,6));
 
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom)
+
+// change parameters
+~sChannel1.set(\freqLow, 0.18)
+~sChannel1.set(\freqHigh, 0.505)
+~vstChannel1.at(\eq3vst1).get(\FreqLo, {|f| f.postln;});
+k = nil ? 6
+k
