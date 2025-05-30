@@ -1,5 +1,6 @@
 rhythmsPath: "C:\\Users\\piert\\MakingMusic\\Bitwig Studio\\Projects\\DrumLoops\\Collection"
 musicLibraryPath: "C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\library.txt"
+musicLibraryCustomPartPath: "C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\libraryCustomPart.txt"
 traktorLibraryPath: "C:\\Users\\piert\\MakingMusic\\Native Instruments\\Traktor 3.5.1\\collection.nml"
 parameterPresetPath: "C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\preset.txt"
 logPath: "C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\Logs"

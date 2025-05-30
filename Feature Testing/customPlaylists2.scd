@@ -26,7 +26,9 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 
 // accessing a playlist
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \None).name;
-~musicLibrary.playlists.at(*['$ROOT', 'E2', 'Break n Bounce Mellow and easy']).trackKeyArray.size;
+~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, "Opening 2".asSymbol).trackKeyArray;
+~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Ma Tracks']);
+~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Custom', 'Senking -> Artbat']);
 
 // compare UUID
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \E1).uuId == ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, \E1).uuId;
@@ -35,16 +37,34 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 // storing library
 ~musicLibrary.store(Library.at(\musicLibraryPath)); // happens automatically when closing the server
 
-// delete a playlist
+// delete a playlist (folder)
 ~musicLibrary.playlists.removeAt(*['$ROOT', 'Special', 'None']);
+~musicLibrary.playlists.removeAt(*["$ROOT".asSymbol, \Custom]);
 
 // find a playlist
 ~musicLibrary.findPlaylistByTitle("Jungle");
 ~musicLibrary.findPlaylistByTitle("None");
 ~musicLibrary.findPlaylistByTitle("Mellow and easy");
+~musicLibrary.findPlaylistByTitle("Artbat");
 
 // rename a playlist
 ~musicLibrary.renamePlaylist(['$ROOT', 'Special', 'None'], "doei")
+
+// opening a playlist in libraryConsole
+~libraryConsole.loadPlaylist(~playlist);
+
+// inspecting a playlist
+~playlist.post;
+~playlist.deleteTrack(5);
+~playlist.trackKeyArray.size
+~playlist.trackKeyArray
+~playlist.trackKeyArray.removeAt(0)
+'\uu\\u'
+(
+var track;
+track = Library.at(\musicLibrary).tracks.at(~playlist.trackKeyArray[1]);
+)
+Library.at(\musicLibrary).tracks.size
 
 // hash test
 a = 3;
@@ -86,3 +106,23 @@ q = ~musicLibrary.playlists.at(*['$ROOT', 'Special', 'E1']).asTrackArray
 ~musicLibrary.barcodeDictionary.at("530616793".asSymbol);
 ~musicLibrary.barcodeDictionary.at("512420248".asSymbol);
 ~musicLibrary.barcodeDictionary
+
+// select track
+~results = ~musicLibrary.findTrackByTitle("Sahkotin");
+~track = ~results.asArray[0];
+~key = ~results.keys.asArray[0];
+
+// generate custom playlist
+Playlist.new("Senking -> Artbat",[], "a3a0df06dbd54069ae2380045b5eb6d4").installCustom;
+
+// taking a part the custom section
+~custom = ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom);
+
+// reinstall custom folder
+~musicLibrary.playlists.put("$ROOT".asSymbol, \Custom, IdentityDictionary.new);
+
+//
+a = [1,2,3]
+a = a ++ 9;
+
+

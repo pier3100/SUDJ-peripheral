@@ -70,6 +70,11 @@ s.options.numOutputBusChannels
 ~deck4.track.postInfo;
 ~deck3.info;
 ~deck3.clock.tempo
+
+(
+~deck1.info;
+~deck3.info;
+)
 // settings
 ~sOutputs.setControlVal(\headPhoneGainDb, -25);
 ~sOutputs.setControlVal(\masterVolume, 0);
@@ -117,9 +122,35 @@ Array.series((s.options.numOutputBusChannels-2).clip(2,6));
 
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom)
 
+// find track
+
+~track = ~musicLibrary.findTrackByTitle("Dissociate - Hardcore").asArray[0];
+~track = ~musicLibrary.findTrackByTitle("One More Fluor").asArray[0];
+
+~results = ~musicLibrary.findTrackByTitle("Luma");
+~track = ~results.asArray[0];
+~track.postInfo
+~deck1.info
+~deck3.info
+~deck1.loadTrack(~track);
+~deck2.loadTrack(~track);
+~deck3.loadTrack(~track);
+~deck4.loadTrack(~track);
+~deck1.track.postInfo
+~deck2.track.postInfo
+~deck3.track.postInfo
+~deck4.track.postInfo
 // change parameters
 ~sChannel1.set(\freqLow, 0.18)
 ~sChannel1.set(\freqHigh, 0.505)
 ~vstChannel1.at(\eq3vst1).get(\FreqLo, {|f| f.postln;});
 k = nil ? 6
 k
+
+//
+~libraryConsole.count
+~libraryConsole.nextTrack_
+~libraryConsole.activeTrackArrayFiltered[0].title
+~prelistenDeck.playPause_(true)
+~prelistenDeck.track
+~libraryConsole.bufferArray[4]

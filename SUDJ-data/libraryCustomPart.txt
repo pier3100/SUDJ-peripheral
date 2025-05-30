@@ -1,0 +1,74 @@
+var o, p;
+o = [
+	IdentityDictionary.prNew,  Array.prNew(64),  Playlist.prNew,  "Opening 7",  
+	"4173cbf5574f4b92827a2d51e7b7d6ed",  Array.prNew,  Playlist.prNew,  "Opening 6",  
+	"7eb4c269c3644c0ba1bfe2a62a57db9f",  Array.prNew,  Playlist.prNew,  "To delete",  
+	"5e180153c08445f7bff4f81c157f3de7",  Array.prNew,  Playlist.prNew,  "Opening 5",  
+	"fc4cb05b5da442e983019388a2b8e3c5",  Array.prNew,  Playlist.prNew,  "Opening 8",  
+	"1e256130a8ff43c8844a8d3d56f37a71",  Array.prNew,  Playlist.prNew,  "Opening 2",  
+	"d1b663b69d374d91b7a59a7bce27413b",  Array.prNew,  Playlist.prNew,  "Opening 3",  
+	"33d1c4e9c937404086768998f384e44f",  Array.prNew,  Playlist.prNew,  "Opening 1",  
+	"3e4fdbaedb7a4087bbd6a67c276a1b89",  Array.prNew,  Playlist.prNew,  "Opening 4",  
+	"0ceffb32db8048b4b51f8301b70f296e",  Array.prNew,  Playlist.prNew,  "Opening 9",  
+	"dcbe7e16fbc54a88b6a29339bfcaf0d9",  Array.prNew,  Playlist.prNew,  "Senking -> Artbat",  
+	"a3a0df06dbd54069ae2380045b5eb6d4",  Array.prNew(1)
+];
+p = [
+	// IdentityDictionary
+	0, [ array: o[1],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	1, [ nil,  nil,  'Opening 7',  o[2],  
+		'Opening 6',  o[6],  'To delete',  o[10],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'Opening 5',  o[14],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'Opening 8',  o[18],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'Opening 2',  o[22],  
+		'Opening 3',  o[26],  nil,  nil,  
+		'Opening 1',  o[30],  'Opening 4',  o[34],  
+		nil,  nil,  nil,  nil,  
+		'Opening 9',  o[38],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'Senking -> Artbat',  o[42] ],  
+	// Playlist
+	2, [ name: o[3],  uuId: o[4],  
+		barcodeId: '518749889',  trackKeyArray: o[5] ],  
+	// Playlist
+	6, [ name: o[7],  uuId: o[8],  
+		barcodeId: '530385186',  trackKeyArray: o[9] ],  
+	// Playlist
+	10, [ name: o[11],  uuId: o[12],  
+		barcodeId: '406636091',  trackKeyArray: o[13] ],  
+	// Playlist
+	14, [ name: o[15],  uuId: o[16],  
+		barcodeId: '311562688',  trackKeyArray: o[17] ],  
+	// Playlist
+	18, [ name: o[19],  uuId: o[20],  
+		barcodeId: '187711118',  trackKeyArray: o[21] ],  
+	// Playlist
+	22, [ name: o[23],  uuId: o[24],  
+		barcodeId: '303582448',  trackKeyArray: o[25] ],  
+	// Playlist
+	26, [ name: o[27],  uuId: o[28],  
+		barcodeId: '439773868',  trackKeyArray: o[29] ],  
+	// Playlist
+	30, [ name: o[31],  uuId: o[32],  
+		barcodeId: '362667938',  trackKeyArray: o[33] ],  
+	// Playlist
+	34, [ name: o[35],  uuId: o[36],  
+		barcodeId: '443416104',  trackKeyArray: o[37] ],  
+	// Playlist
+	38, [ name: o[39],  uuId: o[40],  
+		barcodeId: '402573893',  trackKeyArray: o[41] ],  
+	// Playlist
+	42, [ name: o[43],  uuId: o[44],  
+		barcodeId: '314371453',  trackKeyArray: o[45] ],  
+	// Array
+	45, [ 'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\Senking - Luma.ogg' ]
+];
+prUnarchive(o,p);

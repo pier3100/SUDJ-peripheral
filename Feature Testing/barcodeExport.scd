@@ -1,4 +1,4 @@
-~musicLibrary.exportBarcodes("C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\playlistBarcodes.csv", ["E1", "E2", "E3", "E4", "E5", "Elements", "Set Parts", "Ma Tracks", "Custom"]);
+~musicLibrary.exportBarcodes("C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\playlistBarcodes.csv", ["Special", "Custom"]);
 (
 var string;
 var folderNames;
@@ -9,4 +9,5 @@ folderNames = ["E1", "E2", "E3", "E4", "E5", "Elements", "Set Parts", "Ma Tracks
 	// string = playlist.barcodeId.asString.barcodeId2EAN13(1) ++ "; " ++ folderNames[i].asString ++ ":: " ++ playlist.name ++ "; \n"; // we need to convert the barcode ID to an actual barcode
             });
 )
-~musicLibrary.playlists.postTree
+~musicLibrary.playlists.postTree;
+~musicLibrary.barcodeDictionary_;
