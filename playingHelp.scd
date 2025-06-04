@@ -127,7 +127,7 @@ Array.series((s.options.numOutputBusChannels-2).clip(2,6));
 ~track = ~musicLibrary.findTrackByTitle("Dissociate - Hardcore").asArray[0];
 ~track = ~musicLibrary.findTrackByTitle("One More Fluor").asArray[0];
 
-~results = ~musicLibrary.findTrackByTitle("Luma");
+~results = ~musicLibrary.findTrackByTitle("Sahkotin");
 ~track = ~results.asArray[0];
 ~track.postInfo
 ~deck1.info

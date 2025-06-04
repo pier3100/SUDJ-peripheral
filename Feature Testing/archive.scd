@@ -26,3 +26,8 @@ p.asString
 r.class
 r.interpret
 r = p.asString.replace("\\","\\\\").asSymbol.asCompileString;
+
+p = '\\hello\'';
+r = p.asCompileString
+r.interpret
+p.asString.replace("\\","\\\\").replace("\'", "\\'")

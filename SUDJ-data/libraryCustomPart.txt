@@ -11,7 +11,7 @@ o = [
 	"3e4fdbaedb7a4087bbd6a67c276a1b89",  Array.prNew,  Playlist.prNew,  "Opening 4",  
 	"0ceffb32db8048b4b51f8301b70f296e",  Array.prNew,  Playlist.prNew,  "Opening 9",  
 	"dcbe7e16fbc54a88b6a29339bfcaf0d9",  Array.prNew,  Playlist.prNew,  "Senking -> Artbat",  
-	"a3a0df06dbd54069ae2380045b5eb6d4",  Array.prNew(1)
+	"a3a0df06dbd54069ae2380045b5eb6d4",  Array.prNew(2)
 ];
 p = [
 	// IdentityDictionary
@@ -69,6 +69,6 @@ p = [
 	42, [ name: o[43],  uuId: o[44],  
 		barcodeId: '314371453',  trackKeyArray: o[45] ],  
 	// Array
-	45, [ 'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\Senking - Luma.ogg' ]
+	45, [ 'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\Senking - Luma.ogg',  'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\Pan Sonic - Sahkotin.ogg' ]
 ];
 prUnarchive(o,p);

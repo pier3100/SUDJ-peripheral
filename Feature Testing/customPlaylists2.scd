@@ -29,6 +29,7 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, "Opening 2".asSymbol).trackKeyArray;
 ~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Ma Tracks']);
 ~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Custom', 'Senking -> Artbat']);
+~playlist.trackKeyArray
 
 // compare UUID
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \E1).uuId == ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, \E1).uuId;
