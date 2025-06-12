@@ -1,4 +1,4 @@
-~musicLibrary.exportBarcodes("C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\playlistBarcodes.csv", ["Special", "Custom"]);
+~musicLibrary.exportBarcodes("C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\playlistBarcodes2.csv", ["Energies Combined"]);
 (
 var string;
 var folderNames;

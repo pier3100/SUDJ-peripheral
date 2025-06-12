@@ -27,9 +27,10 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 // accessing a playlist
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \None).name;
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, "Opening 2".asSymbol).trackKeyArray;
-~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Ma Tracks']);
-~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Custom', 'Senking -> Artbat']);
-~playlist.trackKeyArray
+~playlist = ~musicLibrary.playlists.at(*['$ROOT', '00 old', 'E4', 'Goa']);
+~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Energies Combined', 'Goa']);
+~playlist.uuId
+~playlist.trackKeyArray.size
 
 // compare UUID
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \E1).uuId == ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, \E1).uuId;
@@ -44,9 +45,9 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 
 // find a playlist
 ~musicLibrary.findPlaylistByTitle("Jungle");
-~musicLibrary.findPlaylistByTitle("None");
+~musicLibrary.findPlaylistByTitle("Goa");
 ~musicLibrary.findPlaylistByTitle("Mellow and easy");
-~musicLibrary.findPlaylistByTitle("Artbat");
+~musicLibrary.findPlaylistByTitle("Tribal Dance");
 
 // rename a playlist
 ~musicLibrary.renamePlaylist(['$ROOT', 'Special', 'None'], "doei")
@@ -123,7 +124,7 @@ Playlist.new("Senking -> Artbat",[], "a3a0df06dbd54069ae2380045b5eb6d4").install
 ~musicLibrary.playlists.put("$ROOT".asSymbol, \Custom, IdentityDictionary.new);
 
 //
-a = [1,2,3]
-a = a ++ 9;
+~playlist.name
 
+~musicLibrary.playlists.at("$ROOT".asSymbol, 'Energies Combined', ~playlist.name.asSymbol) == ~playlist;
 
