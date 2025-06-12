@@ -127,4 +127,4 @@ Playlist.new("Senking -> Artbat",[], "a3a0df06dbd54069ae2380045b5eb6d4").install
 ~playlist.name
 
 ~musicLibrary.playlists.at("$ROOT".asSymbol, 'Energies Combined', ~playlist.name.asSymbol) == ~playlist;
-
+~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \History).trackKeyArray

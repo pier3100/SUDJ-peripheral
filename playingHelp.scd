@@ -72,7 +72,11 @@ s.options.numOutputBusChannels
 ~deck3.clock.tempo
 
 (
+~deck1.jumpAtBeat_
+140.1/32
+5*32
 ~deck1.info;
+~deck1.loop
 ~deck3.info;
 )
 // settings
