@@ -69,6 +69,6 @@ p = [
 	42, [ name: o[43],  uuId: o[44],  
 		barcodeId: '314371453',  trackKeyArray: o[45] ],  
 	// Array
-	45, [ 'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\Senking - Luma.ogg',  'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\Pan Sonic - Sahkotin.ogg' ]
+	45, [ 'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\RAMMÖ - Pablos Dream.ogg',  'C:\\Users\\piert\\Music\\ZSpotify Music\\Maybe Set1\\Monolink - Return to Oz (ARTBAT Remix) - Return to Oz - ARTBAT Remix.mp3' ]
 ];
 prUnarchive(o,p);

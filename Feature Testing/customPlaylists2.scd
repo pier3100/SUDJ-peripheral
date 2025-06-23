@@ -28,7 +28,7 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \None).name;
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, "Opening 2".asSymbol).trackKeyArray;
 ~playlist = ~musicLibrary.playlists.at(*['$ROOT', '00 old', 'E4', 'Goa']);
-~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Energies Combined', 'Goa']);
+~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Custom', 'Senking -> Artbat']);
 ~playlist.uuId
 ~playlist.trackKeyArray.size
 
@@ -40,12 +40,12 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 ~musicLibrary.store(Library.at(\musicLibraryPath)); // happens automatically when closing the server
 
 // delete a playlist (folder)
-~musicLibrary.playlists.removeAt(*['$ROOT', 'Special', 'None']);
-~musicLibrary.playlists.removeAt(*["$ROOT".asSymbol, \Custom]);
+//~musicLibrary.playlists.removeAt(*['$ROOT', 'Special', 'History']);
+//~musicLibrary.playlists.removeAt(*["$ROOT".asSymbol, \Custom]);
 
 // find a playlist
-~musicLibrary.findPlaylistByTitle("Jungle");
-~musicLibrary.findPlaylistByTitle("Goa");
+~musicLibrary.findPlaylistByTitle("Senking");
+~musicLibrary.findPlaylistByTitle("History");
 ~musicLibrary.findPlaylistByTitle("Mellow and easy");
 ~musicLibrary.findPlaylistByTitle("Tribal Dance");
 
@@ -57,7 +57,7 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 
 // inspecting a playlist
 ~playlist.post;
-~playlist.deleteTrack(5);
+~playlist.deleteTrack(0);
 ~playlist.trackKeyArray.size
 ~playlist.trackKeyArray
 ~playlist.trackKeyArray.removeAt(0)
@@ -124,7 +124,7 @@ Playlist.new("Senking -> Artbat",[], "a3a0df06dbd54069ae2380045b5eb6d4").install
 ~musicLibrary.playlists.put("$ROOT".asSymbol, \Custom, IdentityDictionary.new);
 
 //
-~playlist.name
-
-~musicLibrary.playlists.at("$ROOT".asSymbol, 'Energies Combined', ~playlist.name.asSymbol) == ~playlist;
-~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \History).trackKeyArray
+~libraryConsole.changed(\numberOfTracks)
+~libraryConsole.numberOfTracks
+~libraryConsole.activeTrackArrayFilteredOrdered.size
+//

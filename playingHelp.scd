@@ -130,8 +130,8 @@ Array.series((s.options.numOutputBusChannels-2).clip(2,6));
 
 ~track = ~musicLibrary.findTrackByTitle("Dissociate - Hardcore").asArray[0];
 ~track = ~musicLibrary.findTrackByTitle("One More Fluor").asArray[0];
-
-~results = ~musicLibrary.findTrackByTitle("Sahkotin");
+~results = ~musicLibrary.findTrackByTitle("Return to Oz");
+~results = ~musicLibrary.findTrackByTitle("Ancient History");
 ~track = ~results.asArray[0];
 ~track.postInfo
 ~deck1.info
@@ -140,10 +140,10 @@ Array.series((s.options.numOutputBusChannels-2).clip(2,6));
 ~deck2.loadTrack(~track);
 ~deck3.loadTrack(~track);
 ~deck4.loadTrack(~track);
-~deck1.track.postInfo
-~deck2.track.postInfo
-~deck3.track.postInfo
-~deck4.track.postInfo
+~deck1.track.info
+~deck2.track.info
+~deck3.track.info
+~deck4.track.info
 // change parameters
 ~sChannel1.set(\freqLow, 0.18)
 ~sChannel1.set(\freqHigh, 0.505)
@@ -154,7 +154,7 @@ k
 //
 ~libraryConsole.count
 ~libraryConsole.nextTrack_
-~libraryConsole.activeTrackArrayFiltered[0].title
+~libraryConsole.activeTrackArrayFilteredOrdered[-1].title
 ~prelistenDeck.playPause_(true)
 ~prelistenDeck.track
-~libraryConsole.bufferArray[4]
+~libraryConsole.bufferArray[2]
