@@ -100,7 +100,7 @@ Synth("mainSynth").key(\mainSynth);
 ~bScopeAudio.scope;
 ~bScopeAudio.getn(10, {|val| ("val = "+val).postln});
 ~b_send_3side.trace;
-~sChannel3.trace;
+~sChannel1.trace;
 ~foa1.trace
 Stethoscope.new(s,3,54);
 ServerMeter.new(s,0,8);

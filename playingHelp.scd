@@ -158,3 +158,12 @@ k
 ~prelistenDeck.playPause_(true)
 ~prelistenDeck.track
 ~libraryConsole.bufferArray[2]
+(
+var track = ~prelistenDeck.track;
+track.key.modulate(125/track.bpm).rootNote;
+)
+~libraryConsole.referenceTrack.title
+~prelistenDeck.track.title
+~prelistenDeck.track.key.compatibility(~libraryConsole.referenceTrack.key);
+~libraryConsole.activeTrackArrayFiltered[0].title
+~libraryConsole.masterClock

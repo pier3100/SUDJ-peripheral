@@ -30,3 +30,12 @@ for(0,4){|i|
 ~prelistenDeck.buffer.bufnum
 ~deck1.buffer
 ~deck3.synth.get(\bufnum,{|b| b.postln})
+
+~libraryConsole.bufferArray[2].doOnInfo
+
+~contentDir = "C:\\Users\\piert\\MakingMusic\\SuperCollider\\Content";
+(
+b= Buffer.read(s, ~contentDir +/+ "Sounds/authentic-spurs-70398.wav", action: {"done".postln});
+b.doOnInfo.isNil;
+)
+b.doOnInfo.isNil;

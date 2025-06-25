@@ -1,6 +1,6 @@
 HID.findAvailable;
 HID.postAvailable;
-h = HID.openAt(7);
+h = HID.openAt(16);
 h.action_({arg ...args; args.postln});
 h.action_(nil);
 h.deviceAction_({arg ...args; args.postln});
@@ -10,3 +10,5 @@ r.respondsTo(hoi)
 
 HID.openDevices
 HID.action_({arg ...args; args.postln})
+
+

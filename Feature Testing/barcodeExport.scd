@@ -1,4 +1,4 @@
-~musicLibrary.exportBarcodes("C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\playlistBarcodes2.csv", ["Energies Combined"]);
+
 (
 var string;
 var folderNames;
@@ -11,3 +11,5 @@ folderNames = ["E1", "E2", "E3", "E4", "E5", "Elements", "Set Parts", "Ma Tracks
 )
 ~musicLibrary.playlists.postTree;
 ~musicLibrary.barcodeDictionary_;
+~musicLibrary.exportBarcodes("C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\playlistBarcodesSpecial2.csv", ["Special"]);
+~musicLibrary.exportBarcodes("C:\\Users\\piert\\MakingMusic\\SuperCollider\\SUDJ-data\\playlistBarcodes3.csv", ["Energies Combined"]);
