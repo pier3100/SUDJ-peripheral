@@ -51,4 +51,5 @@ HID.openAt(t.selectKeys({ |item| item.productName =="HID POS" })[0])
     }
 k = t[14]
 g = t.findKeyForValue(k) !? ({g})
-g = t.findKeyForValue(k) 
+g = t.findKeyForValue(k)
+~hidList.dopost

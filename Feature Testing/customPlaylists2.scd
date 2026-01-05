@@ -27,7 +27,7 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 // accessing a playlist
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Special, \None).name;
 ~musicLibrary.playlists.at("$ROOT".asSymbol, \Custom, "Opening 2".asSymbol).trackKeyArray;
-~playlist = ~musicLibrary.playlists.at(*['$ROOT', '00 old', 'E4', 'Goa']);
+~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Custom', 'Opening 9']);
 ~playlist = ~musicLibrary.playlists.at(*['$ROOT', 'Custom', 'Senking -> Artbat']);
 ~playlist.uuId
 ~playlist.trackKeyArray.size
@@ -44,7 +44,7 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 //~musicLibrary.playlists.removeAt(*["$ROOT".asSymbol, \Custom]);
 
 // find a playlist
-~musicLibrary.findPlaylistByTitle("Senking");
+~musicLibrary.findPlaylistByTitle("Opening 9");
 ~musicLibrary.findPlaylistByTitle("History");
 ~musicLibrary.findPlaylistByTitle("Mellow and easy");
 ~musicLibrary.findPlaylistByTitle("Tribal Dance");
@@ -57,7 +57,7 @@ Smartlist.new("Session", { false }, "1e0f57a1b3d24d0cbd5e6ffb5e37359f").addToLib
 
 // inspecting a playlist
 ~playlist.post;
-~playlist.deleteTrack(0);
+~playlist.deleteTrack(2);
 ~playlist.trackKeyArray.size
 ~playlist.trackKeyArray
 ~playlist.trackKeyArray.removeAt(0)

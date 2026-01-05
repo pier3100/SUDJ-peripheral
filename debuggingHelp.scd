@@ -153,7 +153,8 @@ MidiSystem.plc
 MidiHidSystem.enabled_(false);
 m = MidiCC([~mXone, 11, 3], ServerTarget(~sChannel1,\faderVolume), mode:\absolute);
 MidiHidSystem.post
-MidiHidSystem.remove(91)
+MidiHidSystem.remove(155)
+MidiHidSystem.removeAll;
 
 //clock
 c.tempo;

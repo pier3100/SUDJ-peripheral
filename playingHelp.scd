@@ -130,12 +130,28 @@ Array.series((s.options.numOutputBusChannels-2).clip(2,6));
 
 ~track = ~musicLibrary.findTrackByTitle("Dissociate - Hardcore").asArray[0];
 ~track = ~musicLibrary.findTrackByTitle("One More Fluor").asArray[0];
-~results = ~musicLibrary.findTrackByTitle("Return to Oz");
-~results = ~musicLibrary.findTrackByTitle("Ancient History");
+~results = ~musicLibrary.findTrackByTitle("september 13");
+~results = ~musicLibrary.findTrackByTitle("Run All Night");
+~results = ~musicLibrary.findTrackByTitle("Kissed by a Kisser");
+~results = ~musicLibrary.findTrackByTitle("Dont You Ever Give");
+~results = ~musicLibrary.findTrackByTitle("IV. ");
+~results = ~musicLibrary.findTrackByTitle("Giorgio");
+~results = ~musicLibrary.findTrackByTitle("Pump up the Volume");
 ~track = ~results.asArray[0];
 ~track.postInfo
-~deck1.info
-~deck3.info
+
+(
+~deck1.info;
+~deck3.info;
+c.beats;
+)
+(
+~deck1.info;
+~deck3.info;
+~deck3.playPause_(true);
+~deck3.info;
+)
+
 ~deck1.loadTrack(~track);
 ~deck2.loadTrack(~track);
 ~deck3.loadTrack(~track);
@@ -167,3 +183,15 @@ track.key.modulate(125/track.bpm).rootNote;
 ~prelistenDeck.track.key.compatibility(~libraryConsole.referenceTrack.key);
 ~libraryConsole.activeTrackArrayFiltered[0].title
 ~libraryConsole.masterClock
+
+// modify tempoMultiplier
+~deck3.clock.tempoMultiplier
+~deck3.clock.tempoMultiplier_(1)
+
+// phaseSync
+~deck3.phaseSync_;
+~deck3.phaseSync;
+(
+c.beats.frac.postln;
+~deck3.clock.beats.frac.postln;
+)
